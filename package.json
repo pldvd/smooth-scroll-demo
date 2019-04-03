@@ -17,7 +17,5 @@
     "url": "https://github.com/twofive-david/smooth-scroll-demo/issues"
   },
   "homepage": "https://github.com/twofive-david/smooth-scroll-demo",
-  "dependencies": {
-    "jump.js": "^1.0.2"
-  }
+  "dependencies": {}
 }
