@@ -3,6 +3,11 @@
   margin: 0;
 }
 
+body {
+  font-family: sans-serif;
+  background-color: #DCDCDC;
+}
+
 nav {
   background-color: #F4304E;
   position: fixed;
@@ -13,9 +18,9 @@ ul {
   margin-left: 10vw;
 }
 
-body {
-  font-family: sans-serif;
-  background-color: #DCDCDC;
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 li {
