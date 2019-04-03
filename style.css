@@ -3,8 +3,15 @@
   margin: 0;
 }
 
+nav {
+  background-color: #F4304E;
+  position: fixed;
+  width: 100%;
+}
+
 body {
   font-family: sans-serif;
+  background-color: #B3B2B2;
 }
 
 li {
@@ -16,3 +23,24 @@ li {
   display: flex;
 }
 
+div.page {
+  height: 100vh;
+  width: 80%;
+  margin: auto;
+}
+
+.yellow {
+  background-color: #5A0F1E;
+}
+
+.blue {
+  background-color: #16364F;
+}
+
+.red {
+  background-color:#C51F40;
+}
+
+.green {
+  background-color: #333333;
+}
