@@ -1,0 +1,20 @@
+{
+  "name": "smooth-scroll-template",
+  "version": "1.0.0",
+  "description": "In this repo, I am going to create a website with minimal CSS and Vanilla JS animated scroll effects, using the Jump.js library (http://callmecavs.com/jump.js/)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/twofive-david/smooth-scroll-demo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/twofive-david/smooth-scroll-demo/issues"
+  },
+  "homepage": "https://github.com/twofive-david/smooth-scroll-demo"
+}
