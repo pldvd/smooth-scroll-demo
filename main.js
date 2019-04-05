@@ -4,16 +4,16 @@ const productsButton = document.querySelector('li.products');
 const aboutButton = document.querySelector('li.about');
 const pageIds = ['about', 'products', 'technology', 'contact'];
 let currentPageId = 'about';
+let currentScrollY = 0;
 
-function jumpToNext() {
-  window.scrollBy({
-    top: window.innerHeight,
-    left: 0,
+
+function jumpToPage(pageId) {
+  document.getElementById(pageId).scrollIntoView({
     behavior: 'smooth'
-  });
+  })
 }
 
-document.querySelector('main').addEventListener('wheel', (e) => {
+document.addEventListener('wheel', (e) => {
   if (e.deltaY > 0) {
     jumpToNext();
   } else {
@@ -21,36 +21,18 @@ document.querySelector('main').addEventListener('wheel', (e) => {
   }
 })
 
-function jumpToPrevious() {
-  window.scrollBy({
-    top: -window.innerHeight,
-    left: 0,
-    behavior: 'smooth'
-  });
-}
-
 aboutButton.addEventListener('click', () => {
-  const aboutPage = document.getElementById('about');
-  aboutPage.scrollIntoView({
-    behavior: 'smooth'
-  })
+  jumpToPage('about');
 })
 
 contactButton.addEventListener('click', () => {
-  document.getElementById('contact').scrollIntoView({
-    behavior: 'smooth'
-  })
-
+  jumpToPage('contact');
 })
 
 technologyButton.addEventListener('click', () => {
-  document.getElementById('technology').scrollIntoView({
-    behavior: 'smooth'
-  })
+  jumpToPage('technology');
 })
 
 productsButton.addEventListener('click', () => {
-  document.getElementById('products').scrollIntoView({
-    behavior: 'smooth'
-  })
+  jumpToPage('products');
 })
