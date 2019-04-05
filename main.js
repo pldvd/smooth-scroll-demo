@@ -2,8 +2,6 @@ const contactButton = document.querySelector('li.contact');
 const technologyButton = document.querySelector('li.technology');
 const productsButton = document.querySelector('li.products');
 const aboutButton = document.querySelector('li.about');
-const pageIds = ['about', 'products', 'technology', 'contact'];
-let currentPageId = 'about';
 let currentScrollY = 0;
 
 
