@@ -1,3 +1,5 @@
+console.log('cica');
+
 const contactButton = document.querySelector('li.contact');
 const technologyButton = document.querySelector('li.technology');
 const productsButton = document.querySelector('li.products');
@@ -6,9 +8,10 @@ let currentScrollY = 0;
 
 
 function jumpToPage(pageId) {
-  document.getElementById(pageId).scrollIntoView({
+  const selectedPage = document.getElementById(pageId);
+  selectedPage.scrollIntoView({
     behavior: 'smooth'
-  })
+  });
 }
 
 function jumpToNext() {
@@ -39,30 +42,30 @@ function jumpToPrevious() {
   jumpToPage(pageId);
 }
 
-document.addEventListener('scroll', () => {
+document.addEventListener('scroll', function() {
   currentScrollY = window.scrollY;
 });
 
-document.addEventListener('wheel', (e) => {
+document.addEventListener('wheel', function(e) {
   if (e.deltaY > 0) {
     jumpToNext();
   } else {
     jumpToPrevious();
   }
-})
+});
 
-aboutButton.addEventListener('click', () => {
+aboutButton.addEventListener('click', function() {
   jumpToPage('about');
-})
+});
 
-contactButton.addEventListener('click', () => {
+contactButton.addEventListener('click', function() {
   jumpToPage('contact');
-})
+});
 
-technologyButton.addEventListener('click', () => {
+technologyButton.addEventListener('click', function() {
   jumpToPage('technology');
-})
+});
 
-productsButton.addEventListener('click', () => {
+productsButton.addEventListener('click', function() {
   jumpToPage('products');
-})
+});
