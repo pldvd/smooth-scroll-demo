@@ -2,17 +2,18 @@ const contactButton = document.querySelector('li.contact');
 const technologyButton = document.querySelector('li.technology');
 const productsButton = document.querySelector('li.products');
 const aboutButton = document.querySelector('li.about');
+const pageIds = ['about', 'products', 'technology', 'contact'];
+let currentPageId = 'about';
 
 function jumpToNext() {
   window.scrollBy({
-    top: 561,
+    top: window.innerHeight,
     left: 0,
     behavior: 'smooth'
   });
 }
 
 document.querySelector('main').addEventListener('wheel', (e) => {
-  console.log(e.deltaY);
   if (e.deltaY > 0) {
     jumpToNext();
   } else {
@@ -22,7 +23,7 @@ document.querySelector('main').addEventListener('wheel', (e) => {
 
 function jumpToPrevious() {
   window.scrollBy({
-    top: -561,
+    top: -window.innerHeight,
     left: 0,
     behavior: 'smooth'
   });
